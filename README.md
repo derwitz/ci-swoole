@@ -21,7 +21,7 @@ composer require derwitz/codeigniter-swoole
 
 1. first, of course you must install `codeigniter-swoole` to your codeigniter project.
 2. (this step is option) copy these two config files `swoole.php` and `timers.php` from `src/Helper` to your `application/config` folder.
-3. start swoole server `php index.php swoole/server/start`
+3. start swoole server `php index.php swoole/start`
 4. you can use `\CiSwoole\Core\Client::send($data)` to start a task now!
 5. there's no step 5.
 

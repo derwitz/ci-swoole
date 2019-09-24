@@ -34,16 +34,16 @@ function ____intercepter____()
         $command = trim($_SERVER['argv'][1] ?? '', '/');
         switch ($command) {
             // start server
-            case 'start':
+            case 'swoole/start':
                 $start = \CiSwoole\Core\Server::start();
                 die("Start Server: {$start}\n");
             // stop server
-            case 'stop':
+            case 'swoole/stop':
                 \CiSwoole\Core\Client::shutdown();
                 die("Stop Server.\n");
 
             // reload server
-            case 'reload':
+            case 'swoole/reload':
                 \CiSwoole\Core\Client::reload();
                 die("Reload Workers.\n");
             default:
